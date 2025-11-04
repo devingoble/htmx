@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/web-types",
   "name": "htmx",
-  "version": "2.0.8",
+  "version": "5.0.0",
   "default-icon": "./htmx.svg",
   "js-types-syntax": "typescript",
   "description-markup": "markdown",
@@ -125,24 +125,12 @@
           "pattern": {
             "or": [
               {
-                "items": [
-                  "/js/events"
-                ],
-                "template": [
-                  "hx-on:",
-                  "#...",
-                  "#item:JS event"
-                ]
+                "items": ["/js/events"],
+                "template": ["hx-on:", "#...", "#item:JS event"]
               },
               {
-                "items": [
-                  "/js/htmx-events"
-                ],
-                "template": [
-                  "hx-on::",
-                  "#...",
-                  "#item:HTMX event"
-                ]
+                "items": ["/js/htmx-events"],
+                "template": ["hx-on::", "#...", "#item:HTMX event"]
               }
             ]
           },
@@ -337,14 +325,8 @@
         {
           "name": "HTMX event",
           "pattern": {
-            "items": [
-              "/js/htmx-events"
-            ],
-            "template": [
-              "htmx:",
-              "$...",
-              "#item:HTMX event"
-            ]
+            "items": ["/js/htmx-events"],
+            "template": ["htmx:", "$...", "#item:HTMX event"]
           }
         }
       ],
