@@ -107,21 +107,19 @@ htmx is small ([~16k min.gz'd](https://cdn.jsdelivr.net/npm/htmx.org/dist/)),
 
 <h2>motivation</h2>
 
-* Why should only [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) & [`<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) be able to make HTTP requests?
-* Why should only [`click`](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) & [`submit`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event) events trigger them?
-* Why should only [`GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) & [`POST`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) methods be [available](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)?
-* Why should you only be able to replace the **entire** screen?
+- Why should only [`<a>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a) & [`<form>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) be able to make HTTP requests?
+- Why should only [`click`](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) & [`submit`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event) events trigger them?
+- Why should only [`GET`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) & [`POST`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) methods be [available](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)?
+- Why should you only be able to replace the **entire** screen?
 
 By removing these constraints, htmx completes HTML as a [hypertext](https://en.wikipedia.org/wiki/Hypertext)
 
 <h2>quick start</h2>
 
 ```html
-  <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.8/dist/htmx.min.js"></script>
-  <!-- have a button POST a click via AJAX -->
-  <button hx-post="/clicked" hx-swap="outerHTML">
-    Click Me
-  </button>
+<script src="https://cdn.jsdelivr.net/npm/htmx.org@5.0.0/dist/htmx.min.js"></script>
+<!-- have a button POST a click via AJAX -->
+<button hx-post="/clicked" hx-swap="outerHTML">Click Me</button>
 ```
 
 The [`hx-post`](@/attributes/hx-post.md) and [`hx-swap`](@/attributes/hx-swap.md) attributes on
@@ -133,7 +131,7 @@ htmx is the successor to [intercooler.js](http://intercoolerjs.org)
 
 Read the [docs introduction](@/docs.md#introduction) for a more in-depth... introduction.
 
-Note that htmx 2.x has dropped IE support.  If you require IE support you can use the [1.x](https://v1.htmx.org)
+Note that htmx 2.x has dropped IE support. If you require IE support you can use the [1.x](https://v1.htmx.org)
 code-line, which will be supported in perpetuity.
 
 <h2><a name='book'></a>book</h2>
@@ -147,9 +145,7 @@ We are happy to announce the release of [Hypermedia Systems](https://hypermedia.
 
 <h2>sponsors <iframe src="https://github.com/sponsors/bigskysoftware/button" title="Sponsor htmx" height="32" width="114" style="border: 1px solid gray; border-radius: 12px; float:right"></iframe></h2>
 
-
 htmx development can be supported via [GitHub Sponsors](https://github.com/sponsors/bigskysoftware?o=esb)
-
 
 Thank you to all our generous <a href="https://github.com/sponsors/bigskysoftware?o=esb">supporters</a>, including:
 
@@ -190,6 +186,7 @@ Thank you to all our generous <a href="https://github.com/sponsors/bigskysoftwar
 </div>
 
 ## Silver Sponsors
+
 <style>
 #silver-sponsors div {
   text-align: center;
@@ -275,7 +272,6 @@ Thank you to all our generous <a href="https://github.com/sponsors/bigskysoftwar
           <img alt="How to start an LLC - a guide from LLC.org, proud open source sponsor" src="/img/llc-org.svg" style="width:100%;max-width:250px">
         </a>
 </div>
-
 
 <div>
         <a data-github-account="VPSServerCom" href="https://www.vpsserver.com/">
